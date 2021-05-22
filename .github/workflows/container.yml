@@ -27,7 +27,7 @@ jobs:
 
         # enable workflow command processing
         echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
-    steps:
+
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
